@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "name": "todolist-server",
+  "name": "portfolio-server",
   "builds": [
     { "src": "server.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/server.js" }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "maxDuration": 30
-  }
+  ]
 }
